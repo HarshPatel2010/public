@@ -14,6 +14,35 @@
     z-index: 99;
 }
 
+/* Hide the dropdown content by default */
+.dropdown .dropdown-content {
+    display: none;
+}
+
+/* Style the dropdown link to indicate it's clickable */
+.dropdown .nav-link {
+    cursor: pointer;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown content items */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Change the color of the dropdown items on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -136,7 +165,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .5);
     z-index: 1;
 }
 
@@ -150,6 +178,12 @@
     width: 3rem;
     height: 3rem;
 }
+.vvv{
+   
+    margin: 0px auto;
+    display: block;
+}
+
 
 @media (max-width: 768px) {
     #header-carousel .carousel-item {
@@ -162,6 +196,16 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+    .video1{
+        width: 100%;
+        height: 90%;
+    }
+    .vvv{
+        width: 90%;
+    /* margin: auto; */
+    margin: 0px auto;
+    display: block;
     }
 }
 
@@ -350,12 +394,12 @@ section .section-title {
     display: flex;
     flex-wrap:wrap;
 }
-
 .mainflip {
     -webkit-transition: 1s;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 1s;
     margin-right: 20px;
+    height: 90%;
     -moz-transition: 1s;
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
@@ -409,11 +453,12 @@ section .section-title {
 
 .frontside .card,
 .backside .card {
-    min-height: 312px;
+    min-height: 400px;
 }
 .backside
 {
     height: 100%;
+    width: 100%;
 }
 
 .backside .card a {
@@ -431,6 +476,12 @@ section .section-title {
 /* end new css */
 
 
+
+/* videocss */
+
+
+
+/* videocssend */
 
 /*** Feature ***/
 .progress {
